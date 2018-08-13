@@ -1,3 +1,5 @@
+/*global describe, it*/
+
 describe('functions', () => {
   describe('happyHolidays', () => {
     it('returns "Happy holidays!"', () => {
@@ -13,13 +15,13 @@ describe('functions', () => {
 
   describe('happyHolidayTo(holiday, name)', () => {
     it('returns "Happy ${holiday}, ${name}!"', () => {
-      expect(happyHolidayTo('Fathers Day', 'you')).toEqual('Happy Fathers Day, you!')
+      expect(happyHolidayTo('Independence Day', 'you')).toEqual('Happy Independence Day, you!')
     })
   })
 
   describe('holidayCountdown(holiday, days)', () => {
     it('returns "It\'s ${days} days until ${holiday}!"', () => {
-      expect(holidayCountdown("Christmas", 20)).toEqual("It's 4 days until Christmas!")
+      expect(holidayCountdown("Mother's Day", 20)).toEqual("It's 20 days until Mother's Day!")
     })
   })
 })
